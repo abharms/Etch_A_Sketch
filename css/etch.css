@@ -1,14 +1,25 @@
 
+body {
+	display: flex;
+	flex-flow: column;
+}
+
+.topText {
+	order: 1;
+	text-align: center;
+}
+
 
 .container {
 	height: 352px;
 	width: 352px;
 	background-color: #34495e;
-	margin: 0 auto;
+	margin: 50px auto 0 auto;
+	order: 3;
 }
 
 .square {
-	background-color: #16a085;
+	background: #16a085;
 	height: 20px;
 	width: 20px;
 	display: inline-block;
@@ -18,10 +29,15 @@
 .hoverColor {
 	background-color: #ecf0f1;
 }
+.buttonsGroup {
+	order: 2;
+	text-align: center;
+}
 
 .button {
 	text-align: center;
-	margin-top: 50px;
+	margin: 25px;
+	display: inline-block;
 }
 
 a {

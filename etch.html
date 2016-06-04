@@ -3,16 +3,27 @@
 <html>
 <head>
 	<title>Etch-A-Sketch</title>
-	<link rel="stylesheet" type="text/css" href="etch.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/etch.css">
 	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 </head>
 <body>
-	<div class="button">
-		<a href="#" onclick="resetGrid(); return true;">Reset Grid</a>
+	<div class="topText">
+		<h1>Etch-A-Sketch</h1>
+		<p>Hover over the grid to change the colors of the squares. Click the buttons for more options!</p>
 	</div>
-
-
-<script type="text/javascript" src="etch.js"></script>
+	<div class="buttonsGroup">
+		<div class="button">
+			<a href="#" onclick="resetToRandomColors(); return true;">Random Color</a>
+		</div>
+		<div class="button">
+			<a href="#" onclick="resetToDefault(); return true;">Default Grid</a>
+		</div>
+		<div class="button">
+			<a href="#" onclick="chooseGridSize(); return true;">Choose Grid Size</a>
+		</div>
+	</div>
+<script type="text/javascript" src="javascript/etch.js"></script>
 </body>
 </html>
